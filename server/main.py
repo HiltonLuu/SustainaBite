@@ -2,7 +2,6 @@ from typing import List
 
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
-from fastapi.middleware.cors import CORSMiddleware
 
 import crud, models, schemas
 from database import SessionLocal, engine
@@ -11,13 +10,6 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins="*",
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Dependency
 def get_db():
@@ -80,3 +72,9 @@ async def read_about():
         content="This is the about page content."
     )
     return about_data
+# =======
+# @app.post("/createUser")
+# def createUser(userInfo: User):
+#     print(userInfo)
+#     return userInfo
+# >>>>>>> 64db99a3d0ddd73fb4c83b3459e569a280a1dd30
