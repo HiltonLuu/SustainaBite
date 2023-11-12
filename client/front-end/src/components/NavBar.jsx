@@ -46,6 +46,7 @@ const NavBar = () => {
 
         {currentUser === "not-for-profit" ? (
           <div className="flex space-x-4">
+            <p className="text-white">Funds: $1000</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
