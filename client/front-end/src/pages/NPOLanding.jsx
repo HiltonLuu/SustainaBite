@@ -1,65 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import data from "./BusinessData"
-
+import data from "./BusinessData";
 
 export default function NPOLanding() {
-  const data = [
-    {
-      name: "Route 66 Hotel",
-      location: "5671 Poplar Drive",
-      type: "Vegatables (30bs)",
-      pickup: "Nov 14th, 6:30pm",
-      price: 20,
-      retail_price: 50,
-      food_img:
-        "https://images.pexels.com/photos/3988952/pexels-photo-3988952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      company_img:
-        "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
-    },
-    {
-      name: "Local Street Cafe",
-      location: "960 Meadow Mist Lane",
-      type: "Baked Goods (15bs)",
-      pickup: "Nov 13th, 1:45pm",
-      price: 10,
-      retail_price: 30,
-      food_img:
-        "https://images.pexels.com/photos/298217/pexels-photo-298217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      company_img:
-        "https://images.pexels.com/photos/2679323/pexels-photo-2679323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Home Sweet Home Cafe",
-      location: "4658 Saffron Sunset Street",
-      type: "Baked Goods (12bs)",
-      pickup: "Nov 13th, 10:00am",
-      price: 8,
-      retail_price: 25,
-      food_img:
-        "https://images.pexels.com/photos/263070/pexels-photo-263070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      company_img:
-        "https://images.pexels.com/photos/4819658/pexels-photo-4819658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Fish Creek Hotel",
-      location: "3701 Elm Avenue",
-      type: "Fruits (20bs)",
-      pickup: "Nov 15th, 8:00am",
-      price: 15,
-      retail_price: 30,
-      food_img:
-        "https://images.pexels.com/photos/1300975/pexels-photo-1300975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      company_img:
-        "https://images.pexels.com/photos/1569002/pexels-photo-1569002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-  ];
-
-
   return (
     <div className="mt-20">
-
       <div className="pl-10 pt-20 pb-10">
         <h1 className="text-left">Order Near You...</h1>
         <div className="flex text-black">
@@ -90,41 +36,76 @@ export default function NPOLanding() {
                 autoFocus=""
                 value=""
               />
-              
-              <button className="btn btn-active btn-primary ml-5">Search</button>
 
+              <button className="btn btn-active btn-primary ml-5">
+                Search
+              </button>
             </form>
           </div>
         </div>
       </div>
 
       <div className="flex mt-10 mb-10">
-
         <div className="text-left text-black w-1/4 pl-10 border-r-4">
-            <p className="text-xl text-black">
-                <b>All Stores</b>
-            </p>
-            <p className="text-base text-black mt-5">
-                <b>Sort by</b>
-            </p>
- 
-            <div class="flex mt-5">
-            <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox"/>
-              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-black">Recommended</label>
-            </div>
-            <div class="flex mt-2">
-              <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox"/>
-              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-black">Most popular</label>
-            </div>
-            <div class="flex mt-2">
-              <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox"/>
-              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-black">Distance</label>
-            </div>
-            <div class="flex mt-2">
-              <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox"/>
-              <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-black">Price</label>
-            </div>
+          <p className="text-xl text-black">
+            <b>All Stores</b>
+          </p>
+          <p className="text-base text-black mt-5">
+            <b>Sort by</b>
+          </p>
 
+          <div className="flex mt-5">
+            <input
+              type="checkbox"
+              className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+              id="hs-default-checkbox"
+            />
+            <label
+              htmlFor="hs-default-checkbox"
+              className="text-sm text-gray-500 ms-3 dark:text-black"
+            >
+              Recommended
+            </label>
+          </div>
+          <div className="flex mt-2">
+            <input
+              type="checkbox"
+              className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+              id="hs-default-checkbox"
+            />
+            <label
+              htmlFor="hs-default-checkbox"
+              className="text-sm text-gray-500 ms-3 dark:text-black"
+            >
+              Most popular
+            </label>
+          </div>
+          <div className="flex mt-2">
+            <input
+              type="checkbox"
+              className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+              id="hs-default-checkbox"
+            />
+            <label
+              htmlFor="hs-default-checkbox"
+              className="text-sm text-gray-500 ms-3 dark:text-black"
+            >
+              Distance
+            </label>
+          </div>
+          <div className="flex mt-2">
+            <input
+              type="checkbox"
+              className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+              id="hs-default-checkbox"
+            />
+            <label
+              htmlFor="hs-default-checkbox"
+              className="text-sm text-gray-500 ms-3 dark:text-black"
+            >
+              Price
+            </label>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-16 mx-auto">
@@ -155,14 +136,17 @@ export default function NPOLanding() {
                 </div>
                 <div className="card-actions justify-end">
                   <p className="text-left">
-
                     <div className="badge badge-accent"> ${item.price}</div>
                     <div className="badge badge-ghost line-through ml-2">
-                        ${item.retail_price}
+                      ${item.retail_price}
                     </div>
-
                   </p>
-                  <Link to={`/not-for-profit/request/${index}`} className="btn btn-primary">Reserve</Link>
+                  <Link
+                    to={`/not-for-profit/request/${index}`}
+                    className="btn btn-primary"
+                  >
+                    Reserve
+                  </Link>
                 </div>
               </div>
             </div>
