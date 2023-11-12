@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import BusinessLanding from "./pages/BusinessLanding";
 import NPOLanding from "./pages/NPOLanding";
 import Home from "./pages/Home";
-import NPOLanding from "./pages/NPOLanding"
 
 const MainRouter = () => {
   return (
