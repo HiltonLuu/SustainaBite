@@ -1,20 +1,18 @@
-import { useEffect, useState, createContext } from "react";
+import { useEffect, useState } from "react";
+import "./App.css";
 import BusinessLanding from "./pages/BusinessLanding";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutPage from './AboutPage'; // Make sure the path is correct
-import ContactPage from './Orders'; // Make sure the path is correct
-import DonationsPage from './DonationsPage.jsx'; // Import the DonationsPage component
+import ContactPage from './ContactPage'; // Make sure the path is correct
 import './App.css';
-import MainRouter from "./MainRouter";
-import NavBar from "./components/NavBar";
-import { UserContext } from "./UserContext";
+
 
 export default function App() {
-  const [currentUser, setCurrentUser] = useState("");
 
-  
+
   useEffect(() => {
+    
     fetch("http://127.0.0.1:5001/createUser", {
       method: "POST",
       mode: "cors",
@@ -29,12 +27,20 @@ export default function App() {
       console.log(res); 
     })
   }, [])
-       
 
-  return (
-    <UserContext.Provider value={{ currentUser, setCurrentUser }}>
-      <NavBar />
-      <MainRouter />
-    </UserContext.Provider>
-  );
+return (
+  <Router>
+    <nav>
+      <Link to="/">Home</Link> |
+      <Link to="/about">About</Link> |
+      <Link to="/contact">Contact</Link>
+    </nav>
+
+    <Routes>
+      <Route path="/" element={<div><h1 className="text-3xl font-bold underline">Hello world!</h1></div>} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
+  </Router>
+);
 }
