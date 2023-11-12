@@ -8,12 +8,10 @@ export default function App() {
     <div>
         <h1 className="text-left">Order Near You...</h1>
         <div className="flex">
-
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
             </svg>
             <p>2500 University Dr NW, Calgary, T2N 1N4 • Now</p>
-
         </div>
 
         <div class="flex flex-1">
@@ -26,15 +24,16 @@ export default function App() {
         </div>
     </div>
 
-    <div className="flex">
-      <div className="text-left">
-        <h2><b>All Stores</b></h2>
-        <h2><b>Sort</b></h2>
-      </div>
-      
-      <div className="flex">
+    <div className="flex mt-10">
 
-        <div className="card w-96 bg-base-100 shadow-xl p-0 m-5">
+        <div className="text-left">
+            <h2><b>All Stores</b></h2>
+            <h2><b>Sort</b></h2>
+        </div>
+      
+      <div className="grid grid-cols-2 gap-10">
+
+        <div className="card w-96 bg-base-100 shadow-xl p-0">
             <figure className="h-48 w-auto"><img className="object-contain" src="https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg" alt="Food" /></figure>
             <div className="card-body">
                 <div className="flex">
@@ -55,8 +54,50 @@ export default function App() {
             </div>
         </div>
 
-        <div className="card w-96 bg-base-100 shadow-xl p-0 m-5">
+        <div className="card w-96 bg-base-100 shadow-xl p-0">
             <figure className="h-48 w-auto"><img className="object-contain" src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg" alt="Food" /></figure>
+            <div className="card-body">
+                <div className="flex">
+                    <img className="rounded-full h-16 w-16" src="https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg" alt="Profile Picture"/>
+                    <div className="pl-5">
+                        <h2 className="card-title">Business Name</h2>
+                        <p className="text-left">Location: ...</p>
+                    </div>
+                </div>
+                <div className="text-left">
+                    <p>Food Type: ...</p>
+                    <p>Pickup: ...</p>
+                </div>
+                <div className="card-actions justify-end">
+                    <p className="text-left"><b>$4.99</b></p>
+                    <button className="btn btn-primary">Reserve</button>
+                </div>
+            </div>
+        </div>
+
+        <div className="card w-96 bg-base-100 shadow-xl p-0">
+            <figure className="h-48 w-auto"><img className="object-contain" src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?" alt="Food" /></figure>
+            <div className="card-body">
+                <div className="flex">
+                    <img className="rounded-full h-16 w-16" src="https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg" alt="Profile Picture"/>
+                    <div className="pl-5">
+                        <h2 className="card-title">Business Name</h2>
+                        <p className="text-left">Location: ...</p>
+                    </div>
+                </div>
+                <div className="text-left">
+                    <p>Food Type: ...</p>
+                    <p>Pickup: ...</p>
+                </div>
+                <div className="card-actions justify-end">
+                    <p className="text-left"><b>$4.99</b></p>
+                    <button className="btn btn-primary">Reserve</button>
+                </div>
+            </div>
+        </div>
+
+        <div className="card w-96 bg-base-100 shadow-xl p-0">
+            <figure className="h-48 w-auto"><img className="object-contain" src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg" alt="Food" /></figure>
             <div className="card-body">
                 <div className="flex">
                     <img className="rounded-full h-16 w-16" src="https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg" alt="Profile Picture"/>
