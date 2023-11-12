@@ -180,7 +180,7 @@ export default function BusinessLanding() {
                 Create Listing
               </button>
               <dialog id="my_modal_2" className="modal">
-                <div className="modal-box justify-center max-w-3x text-black">
+                <div className="modal-box justify-center max-w-4xl text-black">
                   <div className="flex no-flex">
                     <div className="p-2">
                       <div className="form-control">
