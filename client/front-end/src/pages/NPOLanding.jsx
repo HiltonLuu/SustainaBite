@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
+import data from "./BusinessData"
+
 
 export default function NPOLanding() {
   const data = [
@@ -52,6 +55,7 @@ export default function NPOLanding() {
         "https://images.pexels.com/photos/1569002/pexels-photo-1569002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
+
 
   return (
     <div className="mt-20">
@@ -158,7 +162,7 @@ export default function NPOLanding() {
                     </div>
 
                   </p>
-                  <button className="btn btn-primary">Reserve</button>
+                  <Link to={`/not-for-profit/request/${index}`} className="btn btn-primary">Reserve</Link>
                 </div>
               </div>
             </div>

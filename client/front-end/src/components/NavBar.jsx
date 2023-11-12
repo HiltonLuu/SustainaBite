@@ -1,15 +1,18 @@
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
+import carrotImage from "../assets/carrot.png";
 
 const NavBar = () => {
   const { currentUser } = useContext(UserContext);
 
   return (
-    <div className="bg-gray-800 text-white p-4 fixed top-0 w-full">
+
+    <div className="p-4 fixed top-0 w-full">
       <div className="flex items-center justify-between w-full">
-        <p href="#" className="text-xl font-bold">
-          Your Logo
-        </p>
+        <div className="flex">
+          <h2 className="text-black mt-6 text-4xl">SustainaBite</h2>
+          <img src={carrotImage} width={100} />
+        </div>
 
         {currentUser === "business" ? (
           <div className="flex space-x-4">
@@ -19,7 +22,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-10 h-10 text-gray-500"
             >
               <path
                 strokeLinecap="round"
@@ -33,7 +36,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-10 h-10 text-gray-500"
             >
               <path
                 strokeLinecap="round"
@@ -46,14 +49,14 @@ const NavBar = () => {
 
         {currentUser === "not-for-profit" ? (
           <div className="flex space-x-4">
-            <p className="text-white">Funds: $1000</p>
+            <p className="text-gray-500 mt-1 text-2xl">Funds: $1000</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-10 h-10 text-gray-500"
             >
               <path
                 strokeLinecap="round"
@@ -67,7 +70,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-10 h-10 text-gray-500"
             >
               <path
                 strokeLinecap="round"
@@ -81,7 +84,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-10 h-10 text-gray-500"
             >
               <path
                 strokeLinecap="round"
