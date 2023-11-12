@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 
-export default function App() {
+export default function NPOLanding() {
 
   return (
-  <div>
+  <div className="mt-20">
     <div>
         <h1 className="text-left">Order Near You...</h1>
         <div className="flex">
@@ -26,9 +26,19 @@ export default function App() {
 
     <div className="flex mt-10">
 
-        <div className="text-left">
+        <div className="text-left w-96 bg-gray-200 p-5">
             <h2><b>All Stores</b></h2>
             <h2><b>Sort</b></h2>
+
+            <div class="flex items-center mb-4">
+                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4"/>
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+            </div>
+            <div class="flex items-center">
+                <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4"/>
+                <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+            </div>
+
         </div>
       
       <div className="grid grid-cols-2 gap-10">
