@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 
-export default function App() {
+export default function NPOLanding() {
   const data = [
     {
       name: "Cool Hotel",
