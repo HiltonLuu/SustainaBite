@@ -1,0 +1,27 @@
+/* AboutPage.css */
+
+/* Style for the entire AboutPage container */
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the h1 element */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph (p) element */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Add more styles as needed */
