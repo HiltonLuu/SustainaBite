@@ -61,3 +61,22 @@ def create_item_for_user(
 def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_items(db, skip=skip, limit=limit)
     return items
+
+class User(BaseModel):
+    name: str
+    age: int
+
+@app.post("/createUser", response_model=User)  # Modify the response model as needed
+def create_user(user: User):
+    # Process the user data (e.g., store in a database)
+    # Replace this with your actual processing logic
+    return user
+
+@app.get("/about", response_model=AboutInfo)
+async def read_about():
+    # Example of static data you might return
+    about_data = AboutInfo(
+        title="About Us",
+        content="This is the about page content."
+    )
+    return about_data

@@ -1,0 +1,40 @@
+/* DonationsPage.css */
+.donations-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donation-box {
+    width: calc(50% - 10px); /* 50% width with some spacing */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heart-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.donation-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donation-donor {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.donation-date {
+    font-size: 14px;
+    color: #888;
+}
