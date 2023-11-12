@@ -80,18 +80,15 @@ export default function NPOLanding() {
               <input
                 id="q"
                 name="q"
-                className="inline w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-3 leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+                className="inline w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-3 leading-5 placeholder-gray-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 sm:text-sm"
                 placeholder="Search"
                 type="search"
                 autoFocus=""
                 value=""
               />
-              <button
-                type="submit"
-                className="mt-3 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-              >
-                Search
-              </button>
+              
+              <button className="btn btn-active btn-primary ml-5">Search</button>
+
             </form>
           </div>
         </div>
@@ -100,15 +97,15 @@ export default function NPOLanding() {
       <div className="flex mt-10">
 
         <div className="text-left text-black w-96 pl-10">
-            <p>
+            <p className="text-xl text-black">
                 <b>All Stores</b>
             </p>
-            <p>
+            <p className="text-base text-black mt-5">
                 <b>Sort by</b>
             </p>
  
             <div class="flex mt-5">
-              <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox"/>
+              <input type="checkbox" className="w-5 h-5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-white border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800" id="hs-default-checkbox"/>
               <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-black">Recommended</label>
             </div>
             <div class="flex mt-2">
