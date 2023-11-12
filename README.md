@@ -1,4 +1,7 @@
+<img width="1172" alt="Screenshot 2023-11-12 at 10 05 27 AM" src="https://github.com/HiltonLuu/SustainaBite/assets/60626050/dcebe256-c127-4a58-a598-045d581226a0">
+
 ## Inspiration
+
 
 We have lots of family and friends who have or currently work in businesses related to food. We've seen how businesses are hesitant to donate their food surplus that they can't serve anymore, but are still perfectly edible. We believe that there is not enough incentive for them to coordinate the logistics of delivery or contacting not-for-profits outside of altruistic values. Another large barrier to donating is that businesses do not want the perception of devaluing their food. 
 
