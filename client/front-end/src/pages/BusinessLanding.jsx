@@ -84,8 +84,8 @@ export default function BusinessLanding() {
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title text-sm">{item.type}
-                      <div className="badge badge-accent badge-sm">{item.price}</div>
-                      <div className="badge badge-ghost badge-sm line-through">{item.retail_price}</div>
+                      <div className="badge badge-accent badge-sm">${item.price}</div>
+                      <div className="badge badge-ghost badge-sm line-through">${item.retail_price}</div>
                     </h2>
                     <p className="text-sm text-left">
                       <span className="font-bold text-sm">Pick up by:</span>{item.npo_name}
