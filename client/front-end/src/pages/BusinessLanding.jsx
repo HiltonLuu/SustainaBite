@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "../App.css";
-import contactImage from '../assets/food.jpg';
+import contactImage from "../assets/food.jpg";
+import NavBar from "../components/NavBar";
 
 export default function BusinessLanding() {
-
   return (
     <div>
       <div className="collapse bg-base-200">

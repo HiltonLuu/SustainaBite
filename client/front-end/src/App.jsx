@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import { useEffect, useState, createContext } from "react";
 import BusinessLanding from "./pages/BusinessLanding";
-import NPOLanding from "./pages/NPOLanding";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutPage from './AboutPage'; // Make sure the path is correct
 import ContactPage from './Orders'; // Make sure the path is correct
 import DonationsPage from './DonationsPage.jsx'; // Import the DonationsPage component
 import './App.css';
-
+import MainRouter from "./MainRouter";
+import NavBar from "./components/NavBar";
+import { UserContext } from "./UserContext";
 
 export default function App() {
+  const [currentUser, setCurrentUser] = useState("");
 
-
+  
   useEffect(() => {
-    
     fetch("http://127.0.0.1:5001/createUser", {
       method: "POST",
       mode: "cors",
@@ -29,22 +29,12 @@ export default function App() {
       console.log(res); 
     })
   }, [])
+       
 
-return (
-  <Router>
-    <nav>
-      <Link to="/">Home</Link> |
-      <Link to="/about">About</Link> |
-      <Link to="/Orders">Orders</Link> | 
-      <Link to="/donations">Donations</Link> {/* Add a link to "/donations" */}
-    </nav>
-
-    <Routes>
-      <Route path="/" element={<div><h1 className="text-3xl font-bold underline">Hello world!</h1></div>} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/Orders" element={<ContactPage />} />
-      <Route path="/donations" element={<DonationsPage />} /> {/* Add this route */}
-    </Routes>
-  </Router>
-);
+  return (
+    <UserContext.Provider value={{ currentUser, setCurrentUser }}>
+      <NavBar />
+      <MainRouter />
+    </UserContext.Provider>
+  );
 }
