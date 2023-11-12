@@ -20,7 +20,7 @@ const Home = () => {
         </button>
       </Link>
 
-      <Link to="/business" onClick={() => setOrg("not-for-profit")}>
+      <Link to="/not-for-profit" onClick={() => setOrg("not-for-profit")}>
         <button className="btn btn-accent">Not for Profit</button>
       </Link>
     </div>
