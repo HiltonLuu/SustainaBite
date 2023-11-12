@@ -6,6 +6,7 @@ const NavBar = () => {
   const { currentUser } = useContext(UserContext);
 
   return (
+
     <div className="p-4 fixed top-0 w-full">
       <div className="flex items-center justify-between w-full">
         <div className="flex">
