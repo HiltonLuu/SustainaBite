@@ -2,7 +2,6 @@ from typing import List
 
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
-from pydantic import BaseModel
 
 import crud, models, schemas
 from database import SessionLocal, engine
@@ -11,18 +10,6 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-class AboutInfo(BaseModel):
-    title: str
-    content: str
-
-@app.get("/about", response_model=AboutInfo)
-async def read_about():
-    # Example of static data you might return
-    about_data = AboutInfo(
-        title="About Us",
-        content="This is the about page content."
-    )
-    return about_data
 
 # Dependency
 def get_db():
