@@ -20,16 +20,14 @@ const DonationsPage = () => {
         <div>
             <h1>Make a Donation</h1>
             <div className="donations-list">
-                {donations.map((donation, index) => (
-                    <div key={index} className="donation-box">
-                        <div className="donation-header">
-                            <img src="/heart-icon.png" alt="Heart Icon" className="heart-icon" />
-                            <span className="donation-amount">${donation.amount}</span>
-                        </div>
+                {donations.map((donation) => (
+                    <div key={donation.id} className="donation-item">
+                        <div className="donation-amount">${donation.amount}</div>
                         <div className="donation-details">
-                            <p className="donation-donor">{donation.donor}</p>
-                            <p className="donation-date">Donated on: {donation.date}</p>
+                            <div className="donation-donor">{donation.donorName}</div>
+                            <div className="donation-date">{donation.date}</div>
                         </div>
+                        <div className="heart-icon">❤️</div>
                     </div>
                 ))}
             </div>
