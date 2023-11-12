@@ -1,0 +1,38 @@
+/* DonationsPage.css */
+.donations-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.donation-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.donation-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donation-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-donor {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.donation-date {
+    font-size: 14px;
+    color: #888;
+}
