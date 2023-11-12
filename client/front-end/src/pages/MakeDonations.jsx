@@ -5,13 +5,13 @@ export default function MakeDonations() {
     {
       name: "The Mustard Seed",
       about:
-        "The Mustard Seed is a Christian non-profit organization that has been caring for individuals experiencing homelessness and poverty since 1984.",
+        "A non-profit organization that operates in Canada, with a mission to alleviate poverty and homelessness. They work to provide support and resources to individuals and families in need.",
       company_img: "https://theseed.ca/images/mustard-seed-og-image.jpg",
     },
     {
       name: "Food Banks Canada",
       about:
-        "Food Banks Canada is a national organization that represents and supports the food bank community across the country. They work to alleviate hunger by providing food and resources to those in need.",
+        "Food Banks Canada represents and supports the food bank community across the country. They work to alleviate hunger by providing food and resources to those in need.",
       company_img:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Food_Banks_Canada_logo.svg/1200px-Food_Banks_Canada_logo.svg.png",
     },
@@ -37,16 +37,16 @@ export default function MakeDonations() {
         "https://images.squarespace-cdn.com/content/v1/56be2ddfb654f9af652dc0e5/1479546621019-NGMR8FWWDJ89S2HQTQXZ/image-asset.gif",
     },
     {
-      name: "Community Food Centres Canada",
+      name: "Daily Bread Food Bank",
       about:
-        "Community Food Centres Canada works to build health, belonging, and social justice in low-income communities by offering food programs, education, and engagement initiatives.",
+        "Daily Bread Food Bank is a non-profit organization based in Toronto, Canada, that focuses on alleviating hunger and providing food support to individuals and families experiencing poverty.",
       company_img:
-        "https://images.squarespace-cdn.com/content/v1/56be2ddfb654f9af652dc0e5/1479546621019-NGMR8FWWDJ89S2HQTQXZ/image-asset.gif",
+        "https://mma.prnewswire.com/media/1220980/Daily_Bread_Food_Bank_Daily_Bread_Food_Bank_Study_Reveals_Food_I.jpg?p=facebook",
     },
   ];
 
   return (
-    <div className="mt-40">
+    <div className="mt-40 mb-10">
       <div className="grid grid-cols-3 gap-10 place-items-center">
         {data.map((company, index) => (
           <div
