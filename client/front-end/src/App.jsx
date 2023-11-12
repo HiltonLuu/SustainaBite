@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import BusinessLanding from "./pages/BusinessLanding";
+import NPOLanding from "./pages/NPOLanding";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutPage from './AboutPage'; // Make sure the path is correct
