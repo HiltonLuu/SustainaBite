@@ -36,3 +36,7 @@ def read_item(item_id: int, query_param: str = None):
 def createUser(userInfo: User):
     print(userInfo)
     return userInfo
+
+@app.get("/about-data")
+def get_about_data():
+    return {"title": "About Us", "description": "This is what we do."}
