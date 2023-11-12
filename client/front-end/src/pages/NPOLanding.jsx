@@ -9,7 +9,7 @@ export default function NPOLanding() {
     {
       name: "Route 66 Hotel",
       location: "5671 Poplar Drive",
-      type: "Vegatables (30bs)",
+      type: "Vegatables (30lbs)",
       pickup: "Nov 14th, 6:30pm",
       price: 20,
       retail_price: 50,
@@ -21,7 +21,7 @@ export default function NPOLanding() {
     {
       name: "Local Street Cafe",
       location: "960 Meadow Mist Lane",
-      type: "Baked Goods (15bs)",
+      type: "Baked Goods (15lbs)",
       pickup: "Nov 13th, 1:45pm",
       price: 10,
       retail_price: 30,
@@ -33,7 +33,7 @@ export default function NPOLanding() {
     {
       name: "Home Sweet Home Cafe",
       location: "4658 Saffron Sunset Street",
-      type: "Baked Goods (12bs)",
+      type: "Baked Goods (12lbs)",
       pickup: "Nov 13th, 10:00am",
       price: 8,
       retail_price: 25,
@@ -45,7 +45,7 @@ export default function NPOLanding() {
     {
       name: "Fish Creek Hotel",
       location: "3701 Elm Avenue",
-      type: "Fruits (20bs)",
+      type: "Fruits (20lbs)",
       pickup: "Nov 15th, 8:00am",
       price: 15,
       retail_price: 30,

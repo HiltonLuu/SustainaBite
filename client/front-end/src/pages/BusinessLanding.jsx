@@ -6,60 +6,119 @@ import NavBar from "../components/NavBar";
 export default function BusinessLanding() {
   const data = [
     {
-      name: "Cool Hotel",
-      location: "123 Real Address",
-      type: "Cooked Yams (5lbs)",
-      desc: "food1",
-      pickup: "Nov 13th, 8:00pm",
-      price: 10,
-      retail_price: 20,
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Vegatables (30lbs)",
+      desc: "Carrots, broccoli, potato, onions, etc.",
+      pickup: "Nov 14th, 6:30pm",
+      price: 20,
+      retail_price: 50,
       food_img:
-        "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg",
+        "https://images.pexels.com/photos/3988952/pexels-photo-3988952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       company_img:
         "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
       npo_name: "The Mustard Seed"
     },
     {
-      name: "Cool Hotel",
-      location: "123 Real Address",
-      type: "Cooked Yams (5lbs)",
-      desc: "food2",
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Vegatables (15lbs)",
+      desc: "Broccoli, yam, ginger, tomato, etc.",
       pickup: "Nov 13th, 8:00pm",
-      price: 10,
-      retail_price: 20,
+      price: 15,
+      retail_price: 30,
       food_img:
-        "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg",
+        "https://images.pexels.com/photos/7657071/pexels-photo-7657071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       company_img:
         "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
       npo_name: "The Mustard Seed"
     },
     {
-      name: "Cool Hotel",
-      location: "123 Real Address",
-      type: "Cooked Yams (5lbs)",
-      desc: "food3",
-      pickup: "Nov 13th, 8:00pm",
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Fruits and Veggies (20lbs)",
+      desc: "Mango, Kiwi, Cucumber, Carrots, etc.",
+      pickup: "Nov 15th, 8:30am",
       price: 10,
       retail_price: 20,
       food_img:
-        "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?",
+        "https://images.pexels.com/photos/162825/healthy-food-fresh-organic-162825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       company_img:
         "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
       npo_name: "The Mustard Seed"
     },
     {
-      name: "Cool Hotel",
-      location: "123 Real Address",
-      type: "Cooked Yams (5lbs)",
-      desc: "food4",
-      pickup: "Nov 13th, 8:00pm",
-      price: 10,
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Pasteries (10lbs)",
+      desc: "Muffins, cookies, bread, scones, etc.",
+      pickup: "Nov 13th, 7:30pm",
+      price: 8,
       retail_price: 20,
       food_img:
-        "https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg",
+        "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&w=800",
       company_img:
         "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
       npo_name: "The Mustard Seed"
+    },
+  ];
+
+  const data2 = [
+    {
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Vegatables (25lbs)",
+      desc: "Pepper, carrot, potato, onions, etc.",
+      pickup: "Nov 13th, 2:30pm",
+      price: 18,
+      retail_price: 35,
+      food_img:
+        "https://images.pexels.com/photos/5842510/pexels-photo-5842510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      company_img:
+        "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
+      npo_name: "Food Banks Canada"
+    },
+    {
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Vegatables (15lbs)",
+      desc: "Cucumber, carrots, lettuce, etc.",
+      pickup: "Nov 12th, 5:00pm",
+      price: 15,
+      retail_price: 30,
+      food_img:
+        "https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      company_img:
+        "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
+      npo_name: "Second Harvest"
+    },
+    {
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Fruits (20lbs)",
+      desc: "Apple, bananda, pear, etc.",
+      pickup: "Nov 14th, 10:30am",
+      price: 12,
+      retail_price: 25,
+      food_img:
+        "https://images.pexels.com/photos/1187300/pexels-photo-1187300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      company_img:
+        "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
+      npo_name: "Breakfast Club of Canada"
+    },
+    {
+      name: "Route 66 Hotel",
+      location: "5671 Poplar Drive",
+      type: "Pasteries (10lbs)",
+      desc: "Muffins, cookies, bread, scones, etc.",
+      pickup: "Nov 13th, 7:30pm",
+      price: 8,
+      retail_price: 20,
+      food_img:
+        "https://images.pexels.com/photos/3650438/pexels-photo-3650438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      company_img:
+        "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg",
+      npo_name: "Food Banks Canada"
     },
   ];
 
@@ -70,25 +129,25 @@ export default function BusinessLanding() {
       <div className="collapse bg-base-200 mr-10 ml-10 mt-20 w-auto">
 
         <input type="checkbox" />
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium text-black">
           Click to see your confirmed orders
         </div>
 
         <div className="collapse-content">
           <div className="carousel gap-4">
-            {data.map((item, index) => (
+            {data2.map((item, index) => (
               <div key={index}>
                 <div className="card card-compact w-48 bg-base-100 carousel-item p-0 w-48 h-72">
                   <figure className="">
                     <img src={item.food_img} alt="Food" />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title text-sm">{item.type}
+                    <h2 className="card-title text-sm text-black">{item.type}
                       <div className="badge badge-accent badge-sm">${item.price}</div>
                       <div className="badge badge-ghost badge-sm line-through">${item.retail_price}</div>
                     </h2>
                     <p className="text-sm text-left">
-                      <span className="font-bold text-sm">Pick up by:</span>{item.npo_name}
+                      <span className="font-bold text-sm">Picked up by: </span>{item.npo_name}
                     </p>
                     <div class="h-16 overflow-hidden">
                       <p class="overflow-ellipsis text-sm text-left">
@@ -105,7 +164,7 @@ export default function BusinessLanding() {
                             <div className="w-72 pr-8">
                               <h1 className="text-3xl font-bold text-left">{item.type}</h1>
                               <p className="text-left text-black pt-2 pb-2">
-                                <span className="font-bold">Pick up by:</span>{item.npo_name}
+                                <span className="font-bold">Pick up by: </span>{item.npo_name}
                               </p>
                               <p className="text-left text-black pt-2 pb-2">
                                 <span className="font-bold">Pick up before:</span> {item.pickup}
@@ -179,7 +238,7 @@ export default function BusinessLanding() {
                       </div>
                       <div className="form-control">
                         <label className="label">
-                          <span className="label-text">Enter pickup before time </span>
+                          <span className="label-text">Enter pickup before time</span>
                         </label>
                         <input type="time" placeholder="$0.00" className="input input-bordered" />
                       </div>
@@ -231,9 +290,9 @@ export default function BusinessLanding() {
                         <div className="flex m-10 no-flex">
                           <div className="w-72 pr-8">
                             <h1 className="text-3xl font-bold text-left">{item.type}</h1>
-                            <p className="text-left text-black pt-2 pb-2">
+                            {/* <p className="text-left text-black pt-2 pb-2">
                               <span className="font-bold">Pick up by: </span>{item.npo_name}
-                            </p>
+                            </p> */}
                             <p className="text-left text-black pt-2 pb-2">
                               <span className="font-bold">Pick up time: </span>{item.pickup}
                             </p>
