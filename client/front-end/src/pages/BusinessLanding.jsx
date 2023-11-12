@@ -79,7 +79,7 @@ export default function BusinessLanding() {
             {data.map((item, index) => (
               <div key={index}>
                 <div className="card card-compact w-48 bg-base-100 carousel-item p-0 w-48 h-72">
-                  <figure className="h-48">
+                  <figure className="">
                     <img src={item.food_img} alt="Food" />
                   </figure>
                   <div className="card-body">
@@ -187,7 +187,7 @@ export default function BusinessLanding() {
                     <div className="text-left p-4 pl-8 w-full">
                       <h2 className="pb-4">Enter a description for your listing</h2>
                       <div className="form-control">
-                        <textarea type="text" placeholder="Type here" className="input input-bordered p-8" />
+                        <textarea type="text" placeholder="Type here" className="input input-bordered p-8 h-80" />
                       </div>
                     </div>
                   </div>
