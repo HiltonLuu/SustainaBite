@@ -4,6 +4,7 @@ import "../App.css";
 import data from "./BusinessData";
 
 export default function NPOLanding() {
+
   return (
     <div className="mt-20">
       <div className="pl-10 pt-20 pb-10">
