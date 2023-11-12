@@ -1,5 +1,19 @@
 <img width="1172" alt="Screenshot 2023-11-12 at 10 05 27 AM" src="https://github.com/HiltonLuu/SustainaBite/assets/60626050/dcebe256-c127-4a58-a598-045d581226a0">
 
+# Table of Contents
+
+1. [Inspiration](#inspiration)
+2. [Key stats](#key-stats)
+3. [What it does](#what-it-does)
+4. [How we built it](#how-we-built-it)
+5. [Challenges we ran into](#challenges-we-ran-into)
+6. [Accomplishments](#accomplishments-that-were-proud-of)
+7. [What we learned](#what-we-learned)
+8. [What's next for SustainaBite](#whats-next-for-sustainabite)
+9. [Installation](#installation)
+
+
+
 ## Inspiration
 
 
@@ -23,7 +37,7 @@ Back-end: FastAPI, SQLAlchemy, SQLite
 
 ### Too large of a scope for time constraints
 
-We had a lot of features and user flows in mind and we tried to divide the different work between front/back end. However, the time constraints made it hard to properly make the api routes while still deciding on the front-end layout. Ultimately we had to pivot to focus on completing the front-end flows as the priority. We still did set up the server and a test SQLite DB using SQLAlchemy, however we weren't able to connect it to the fornt-end.  
+We had a lot of features and user flows in mind and we tried to divide the different work between front/back end. However, the time constraints made it hard to properly make the api routes while still deciding on the front-end layout. Ultimately we had to pivot to focus on completing the front-end flows as the priority. We still did set up the server and a test SQLite DB using SQLAlchemy, however we weren't able to connect it to the front end.  
 
 ### Roadblocks in learning new technologies
 
@@ -52,3 +66,17 @@ In hindsight, we would have saved a lot of time if we spent some time learning h
 ## What's next for SustainaBite
 
 Moving forward, we would start formal user research by reaching to the various stakeholders of our product (business, non-profit, donators) across Calgary to validate our idea, while also taking into account the feedback from the potential users to iterate.
+
+## Installation
+
+To run the project:
+- Ensure that you have node.js, python3, npm, and pip installed
+- Clone the project into a local repository
+- cd into the client/front-end directory
+- Run npm i
+- Run npm run dev
+- Start a new terminal session
+- cd into the server directory
+- Run pip install fastapi
+- Run pip install SQLAlchemy
+- Run uvicorn main:app --reload
