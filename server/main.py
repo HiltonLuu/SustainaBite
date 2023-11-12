@@ -1,6 +1,7 @@
 from typing import List
 
 from fastapi import Depends, FastAPI, HTTPException
+from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 import crud, models, schemas
@@ -64,14 +65,14 @@ def create_user(user: User):
     # Replace this with your actual processing logic
     return user
 
-@app.get("/about", response_model=AboutInfo)
-async def read_about():
+# @app.get("/about", response_model=AboutInfo)
+# async def read_about():
     # Example of static data you might return
-    about_data = AboutInfo(
-        title="About Us",
-        content="This is the about page content."
-    )
-    return about_data
+   # about_data = AboutInfo(
+       # title="About Us",
+       # content="This is the about page content."
+    #)
+    # return about_data
 # =======
 # @app.post("/createUser")
 # def createUser(userInfo: User):
